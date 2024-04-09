@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lestaurant</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div class="container">
+
+        <img src="LestaurantLogo.png" alt="This is the Lestaurant Logo" class="logo">
+
+    <div class="title-of-form">
+        <p>L E S T A U R A N T</p>
+    </div>
+
+    <div class="subtitle-of-form">
+        <p>Lestaurant offers Lesterrific food and Lesthetic place.</p>
+    </div>
+
+    <div class="basic-info">
+        <p>Food + TRIP + around the world</p>
+    </div>
+        
+    <div id="dropdown">
+            <button class="dropdown-toggle">
+            <span>Menu</span>
+            <i class="fa-solid fa-caret-down"></i>
+            </button>
+
+    <ul class="menu">
+            <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                    <span>Italian</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    </a>
+
+    <ul class="submenu">
+            <li class="submenu-item"><a href="#">Pasta</a></li>
+            <li class="submenu-item"><a href="#">Lasagna</a></li>
+            <li class="submenu-item"><a href="#">Pizza</a></li>
+    </ul>
+    </li>
+
+            <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                    <span>Chinese</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    </a>
+
+    <ul class="submenu">
+            <li class="submenu-item"><a href="#">Pecking Roast Duck</a></li>
+            <li class="submenu-item"><a href="#">Wonton Soup</a></li>
+            <li class="submenu-item"><a href="#">Chinese Hot Pot</a></li>
+    </ul>                
+    </li>
+            <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                    <span>Healthy Options</span>
+                    <i class="fa-solid fa-caret-right"></i>  
+                    </a>
+
+    <ul class="submenu">
+            <li class="submenu-item"><a href="#">Vegetarian</a></li>
+            <li class="submenu-item"><a href="#">Vegan</a></li>
+            <li class="submenu-item"><a href="#">Glutan-Free</a></li>
+    </ul>
+    </li>
+             <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                    <span>Mexican</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    </a>
+
+    <ul class="submenu">
+            <li class="submenu-item"><a href="#">Tacos</a></li>
+            <li class="submenu-item"><a href="#">Burritos</a></li>
+            <li class="submenu-item"><a href="#">Quesadilla</a></li>
+    </ul>           
+    </li>
+
+             <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                    <span>Specials</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    </a>
+
+    <ul class="submenu">
+             <li class="submenu-item"><a href="#">Adobo</a></li>
+             <li class="submenu-item"><a href="#">Sinigang</a></li>
+             <li class="submenu-item"><a href="#">Kare-Kare</a></li>
+    </ul>
+    </li>
+
+    </ul>
+    </div>
+
+    <div class="input-order">
+        <p>Enter your order here:</p>
+    </div>
+
+    <form action="" method="get" class="order-form">
+
+        <div class="form-row">
+            <label for="full-name">Name:</label>
+            <input id="full-name" name="full-name" type="text" placeholder="Name"/>
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email"  placeholder="Email"/>
+        </div>
+
+        <div class="form-row">
+            <label for="age">Age:</label>
+            <input id="age" name="age" type="number" placeholder="Age" />
+        </div>
+
+        <div class="form-row">
+            <label for="type-of-cuisine">Type of Cuisine:</label>
+            <input id="type-of-cuisine" name="type-of-cuisine" type="text" placeholder="Type of Cuisine"/>
+        </div>
+
+        <div class="form-row">
+            <label for="mode-of-payment">Mode of Payment:</label>
+            <select id="mode-of-payment" name="mode-of-payment">
+                <option value="cash">Cash</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="gcash">Gcash</option>
+                <option value="paymaya">Paymaya</option>
+            </select>
+        </div>
+
+        <fieldset class="offer-form-row">
+            <input id="offer-type-1" name="offer-type" type="radio" value="dine-in" checked />
+            <label for="offer-type-1" class="radio-label">Dine-in</label>
+
+            <input id="offer-type-2" name="offer-type" type="radio" value="take-out"/>
+            <label for="offer-type-2" class="radio-label">Take-out</label>
+        </fieldset>
+
+        <div class="form-row">
+            <label for="comments-or-instruction">Comments/Instruction:</label>
+            <textarea id="comments-or-instruction" name="comments-or-instruction"></textarea>
+        </div>
+
+        <div class="button-form-row">
+            <input type="button" value="Order Placed" onclick="alert('Thank you for ordering!')"/>
+            <input type="button" value="Cancel" onclick="alert('Cancel Order!')"/>
+        </div>
+
+    </form>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
